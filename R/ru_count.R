@@ -16,7 +16,7 @@ ru_count <- function(text){
     dic=dics[[i]]
     j.count=rep(0,length(dic))
     for (j in 1:length(dic)) {
-      j.count[[j]]=sum(mapply(count.matches, dic[[j]], sample_text_lemmatized))
+      j.count[[j]]=sum(mapply(count.matches, dic[[j]], text))
     }
     names(j.count)=names(dic)
     ru_count_all[[i]]=j.count
@@ -25,3 +25,4 @@ ru_count <- function(text){
   ru_count_all
 
 }
+
