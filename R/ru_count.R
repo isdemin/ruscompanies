@@ -16,7 +16,6 @@ ru_count <- function(text){
     dic=dics[[i]]
     j.count=rep(0,length(dic))
     for (j in 1:length(dic)) {
-      print(mapply(ru_count_matches, dic[[j]], sample_text_lemmatized))
       j.count[[j]]=sum(mapply(count.matches, dic[[j]], sample_text_lemmatized))
     }
     names(j.count)=names(dic)
@@ -24,4 +23,5 @@ ru_count <- function(text){
   }
   names(ru_count_all)=c('Экологические аспекты','Социальные аспекты','Управленческие аспекты')
   ru_count_all
+
 }
