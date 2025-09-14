@@ -1,5 +1,5 @@
 Package: ruscompanies
-Title: What the Package Does (One Line, Title Case)
+Title: Text analysis for Russian companies.
 Version: 0.0.0.9000
 Authors@R: 
     person("Igor", "Demin", , "idemin@fa.ru", role = c("aut", "cre"))
